@@ -55,8 +55,9 @@ def main():
         tqdm_instance.set_postfix(
             doc_id=doc_id,
             premise_count=premise_count,
-            hypothesis_count=hypothesis_count
+            hypothesis_count=hypothesis_count,
         )
+
         data[doc_id] = {
             'doc_id': doc_id,
             "premise": premise,
@@ -65,6 +66,7 @@ def main():
             "premise_count": premise_count,
             "hypothesis_count": hypothesis_count
         }
+
         if index % 100 == 0:
             df = pd.DataFrame.from_dict(data, orient='index')
             df.to_csv("inf-gram/res.csv")
