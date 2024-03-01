@@ -5,20 +5,14 @@
 @File ：inf.py
 @IDE ：PyCharm
 """
-import argparse
-import os
-import pickle
 
+import pandas as pd
 import requests
+from datasets import load_from_disk
 from tqdm import tqdm
 
 URL = "https://api.infini-gram.io/"
-
-
-def load_inv_term(n):
-    with open(f"n-gram/inv_term_{n}.pkl", "rb") as f:
-        inv_term = pickle.load(f)
-        return inv_term
+dataset = load_from_disk("snli_with_id")
 
 
 def get_inf_gram_count(n_gram_data):
@@ -45,28 +39,40 @@ def get_inf_gram_count(n_gram_data):
     return count
 
 
-def save_to_csv(count, n, n_gram):
-    if os.path.exists(f"n-gram-count-{n}.csv"):
-        with open(f"n-gram-count/n-gram-count-{n}.csv", "a") as f:
-            f.write(f"{n_gram},{count}\n")
-    else:
-        with open(f"n-gram-count/n-gram-count-{n}.csv", "w") as f:
-            f.write(f"{n_gram},{count}\n")
-
-
 def main():
-    arg_parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    arg_parser.add_argument('--n', type=int,  help='n-gram')
-    args = arg_parser.parse_args()
-    n = args.n
-    if n is None:
-        raise ValueError("Please specify n-gram")
-    inv_term = load_inv_term(n)
-    print(f'Number of n-grams: {len(inv_term)}')
+    tqdm_instance = tqdm(dataset)
+    data = {}
+    for index, example in enumerate(tqdm_instance):
+        premise = example["premise"]
+        hypothesis = example["hypothesis"]
+        doc_id = example["id"]
+        label = example["label"]
 
-    for n_gram in tqdm(inv_term):
-        count = get_inf_gram_count(n_gram)
-        save_to_csv(count, n, n_gram)
+        premise_count = get_inf_gram_count(premise)
+
+        hypothesis_count = get_inf_gram_count(hypothesis)
+
+        tqdm_instance.set_postfix(
+            doc_id=doc_id,
+            premise_count=premise_count,
+            hypothesis_count=hypothesis_count
+        )
+        data[doc_id] = {
+            'doc_id': doc_id,
+            "premise": premise,
+            "hypothesis": hypothesis,
+            "label": label,
+            "premise_count": premise_count,
+            "hypothesis_count": hypothesis_count
+        }
+        if index % 100 == 0:
+            df = pd.DataFrame.from_dict(data, orient='index')
+            df.to_csv("inf-gram/res.csv")
+            df.to_parquet("inf-gram/res.parquet")
+
+    df = pd.DataFrame.from_dict(data, orient='index')
+    df.to_csv("inf-gram/res.csv")
+    df.to_parquet("inf-gram/res.parquet")
 
 
 if __name__ == '__main__':
