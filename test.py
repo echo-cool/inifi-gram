@@ -7,6 +7,6 @@
 """
 import pickle
 
-with open("n-gram/inv_term_5.pkl", "rb") as f:
-    inv_term = pickle.load(f)
-    print(inv_term)
+data = pickle.load(open("query/inv_sentence.pkl", "rb"))
+
+print(data)
