@@ -17,8 +17,7 @@ dataset = load_from_disk("snli_with_id")
 
 def get_inf_gram_count(n_gram_data):
     payload = {
-        # "corpus": "v4_piletrain_llama",
-        "corpus": "v4_c4train_llama",
+        "corpus": "v4_rpj_llama_s4",
         "query_type": "count",
         "query": n_gram_data,
     }
