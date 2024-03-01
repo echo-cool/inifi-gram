@@ -42,8 +42,8 @@ def main():
     tqdm_instance = tqdm(dataset)
     data = {}
     for index, example in enumerate(tqdm_instance):
-        premise = example["premise"]
-        hypothesis = example["hypothesis"]
+        premise = example["premise"].strip()
+        hypothesis = example["hypothesis"].strip()
         doc_id = example["id"]
         label = example["label"]
 
