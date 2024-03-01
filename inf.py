@@ -5,6 +5,7 @@
 @File ：inf.py
 @IDE ：PyCharm
 """
+import os
 
 import pandas as pd
 import requests
@@ -41,6 +42,8 @@ def get_inf_gram_count(n_gram_data):
 def main():
     tqdm_instance = tqdm(dataset)
     data = {}
+    if not os.path.exists("inf-gram"):
+        os.makedirs("inf-gram")
     for index, example in enumerate(tqdm_instance):
         premise = example["premise"].strip()
         hypothesis = example["hypothesis"].strip()
