@@ -25,18 +25,21 @@ def get_inf_gram_count(n_gram_data):
 
     # Headers to specify that we are sending JSON data
     headers = {"Content-Type": "application/json"}
+    try:
+        # Sending the POST request
+        response = requests.post(URL, json=payload, headers=headers, timeout=10)
 
-    # Sending the POST request
-    response = requests.post(URL, json=payload, headers=headers)
+        # print(response, response.json())
 
-    # print(response, response.json())
+        if "count" not in response.json():
+            print("ERROR!")
+            print(response.json())
 
-    if "count" not in response.json():
-        print("ERROR!")
-        print(response.json())
-
-    count = response.json()["count"]
-    return count
+        count = response.json()["count"]
+        return count
+    except Exception as e:
+        print(e)
+        return -1
 
 
 def main():
