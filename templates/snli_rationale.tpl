@@ -1,0 +1,1 @@
+Explain why "{{premise}}" {{judgment}} "{{hypothesis}}" in no more than 100 words:
