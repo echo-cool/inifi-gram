@@ -110,7 +110,7 @@ def process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base",
         }
 
         existing_ids.add(doc_id)
-        if doc_id % 5 == 0:
+        if doc_id % 100 == 0:
             df = pd.DataFrame.from_dict(existing_dct, orient='index')
             df.reset_index(inplace=True)
             df.rename(columns={'index': 'id'}, inplace=True)
@@ -123,7 +123,7 @@ def process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base",
 
 
 def main():
-    process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base", num_instance=10)
+    process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base")
 
 
 if __name__ == "__main__":
