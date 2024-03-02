@@ -122,7 +122,7 @@ def process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base",
 
 
 def main():
-    process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base", num_instance=10)
+    process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base")
 
 
 if __name__ == "__main__":
