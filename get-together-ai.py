@@ -58,12 +58,17 @@ def get_together_ai(prompt, model, max_tokens, stop=["</s>"]):
         "content-type": "application/json",
         "Authorization": f"Bearer {TOGETHER_AI_API_KEY}"
     }
+    try:
+        response = requests.post(url, json=payload, headers=headers)
+        if response.status_code != 200:
+            print(response.json())
+            raise Exception(f"Failed to get response from Together AI: {response.status_code}")
+        res = response.json()
+        return res['choices'][0]['text']
 
-    response = requests.post(url, json=payload, headers=headers)
-    if response.status_code != 200:
-        print(response.json())
-        raise Exception(f"Failed to get response from Together AI: {response.status_code}")
-    return response.json()['choices'][0]['text']
+    except Exception as e:
+        print(e)
+        return ""
 
 
 
@@ -84,7 +89,7 @@ def process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base",
         doc_id = example["id"]
 
         if doc_id in existing_ids:
-            tqdm.write(f"Skipping {doc_id} as it already exists in the dataset.")
+            print(f"Skipping {doc_id} as it already exists in the dataset.")
             continue
 
         premise = example["premise"]
@@ -92,7 +97,7 @@ def process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base",
         label_id = example["label"]
 
         if label_id not in id_label_mapping:
-            tqdm.write(f"Skipping {doc_id} as it does not have a valid label.")
+            print(f"Skipping {doc_id} as it does not have a valid label.")
             continue
 
         label = id_label_mapping[label_id]
@@ -109,7 +114,7 @@ def process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base",
         clean_prediction_id = label_id_mapping[raw_prediction_id]
 
         if clean_prediction_id == -1:
-            tqdm.write(f"Skipping rationale for {doc_id} as it has an invalid prediction.")
+            print(f"Skipping rationale for {doc_id} as it has an invalid prediction.")
             raw_rationale = ""
         else:
             rationale_tmpl = get_jinja_environment().get_template("snli_rationale.tpl")
