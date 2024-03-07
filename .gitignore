@@ -5,3 +5,4 @@ venv/
 .idea/
 
 .env
+es_search/es_config.yml

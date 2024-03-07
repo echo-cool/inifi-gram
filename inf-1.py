@@ -14,7 +14,7 @@ from tqdm import tqdm
 
 URL = "https://api.infini-gram.io/"
 dataset = load_from_disk("snli_with_id")
-corpus_name = "v4_dolma-v1_6_llama"
+corpus_name = "v4_dolmasample_olmo"
 
 output_file_name_csv = f"inf-gram/res-{corpus_name}.csv"
 output_file_name_parquet = f"inf-gram/res-{corpus_name}.parquet"
