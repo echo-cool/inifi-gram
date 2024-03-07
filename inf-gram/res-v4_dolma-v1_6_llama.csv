@@ -1,102 +1,101 @@
-,doc_id,premise,hypothesis,label,premise_count,hypothesis_count
-0,0,A person on a horse jumps over a broken down airplane.,A person is training his horse for a competition.,1,14,12
-1,1,A person on a horse jumps over a broken down airplane.,"A person is at a diner, ordering an omelette.",2,14,9
-2,2,A person on a horse jumps over a broken down airplane.,"A person is outdoors, on a horse.",0,14,8
-3,3,Children smiling and waving at camera,They are smiling at their parents,1,20,10
-4,4,Children smiling and waving at camera,There are children present,0,20,344
-5,5,Children smiling and waving at camera,The kids are frowning,2,20,8
-6,6,A boy is jumping on skateboard in the middle of a red bridge.,The boy skates down the sidewalk.,2,1,3
-7,7,A boy is jumping on skateboard in the middle of a red bridge.,The boy does a skateboarding trick.,0,1,2
-8,8,A boy is jumping on skateboard in the middle of a red bridge.,The boy is wearing safety equipment.,1,1,2
-9,9,An older man sits with his orange juice at a small table in a coffee shop while employees in bright colored shirts smile in the background.,An older man drinks his juice as he waits for his daughter to get off work.,1,1,0
-10,10,An older man sits with his orange juice at a small table in a coffee shop while employees in bright colored shirts smile in the background.,A boy flips a burger.,2,1,0
-11,11,An older man sits with his orange juice at a small table in a coffee shop while employees in bright colored shirts smile in the background.,An elderly man sits in a small shop.,1,1,0
-12,12,Two blond women are hugging one another.,Some women are hugging on vacation.,1,1,0
-13,13,Two blond women are hugging one another.,The women are sleeping.,2,1,0
-14,14,Two blond women are hugging one another.,There are women showing affection.,0,1,0
-15,15,"A few people in a restaurant setting, one of them is drinking orange juice.",The people are eating omelettes.,1,1,0
-16,16,"A few people in a restaurant setting, one of them is drinking orange juice.",The people are sitting at desks in school.,2,1,0
-17,17,"A few people in a restaurant setting, one of them is drinking orange juice.",The diners are at a restaurant.,0,1,0
-18,18,An older man is drinking orange juice at a restaurant.,A man is drinking juice.,0,0,0
-19,19,An older man is drinking orange juice at a restaurant.,Two women are at a restaurant drinking wine.,2,0,0
-20,20,An older man is drinking orange juice at a restaurant.,A man in a restaurant is waiting for his meal to arrive.,1,0,0
-21,21,"A man with blond-hair, and a brown shirt drinking out of a public water fountain.",A blond man getting a drink of water from a fountain in the park.,1,0,0
-22,22,"A man with blond-hair, and a brown shirt drinking out of a public water fountain.",A blond man wearing a brown shirt is reading a book on a bench in the park,2,0,0
-23,23,"A man with blond-hair, and a brown shirt drinking out of a public water fountain.",A blond man drinking water from a fountain.,0,0,0
-24,24,Two women who just had lunch hugging and saying goodbye.,The friends scowl at each other over a full dinner table.,2,0,0
-25,25,Two women who just had lunch hugging and saying goodbye.,There are two woman in this picture.,0,0,0
-26,26,Two women who just had lunch hugging and saying goodbye.,"The friends have just met for the first time in 20 years, and have had a great time catching up.",1,0,0
-27,27,"Two women, holding food carryout containers, hug.","The two sisters saw each other across the crowded diner and shared a hug, both clutching their doggie bags.",1,0,0
-28,28,"Two women, holding food carryout containers, hug.",Two groups of rival gang members flipped each other off.,2,0,0
-29,29,"Two women, holding food carryout containers, hug.",Two women hug each other.,0,0,0
-30,30,A Little League team tries to catch a runner sliding into a base in an afternoon game.,A team is trying to score the games winning out.,1,0,0
-31,31,A Little League team tries to catch a runner sliding into a base in an afternoon game.,A team is trying to tag a runner out.,0,0,0
-32,32,A Little League team tries to catch a runner sliding into a base in an afternoon game.,A team is playing baseball on Saturn.,2,0,0
-33,33,The school is having a special event in order to show the american culture on how other cultures are dealt with in parties.,A school hosts a basketball game.,2,0,0
-34,34,The school is having a special event in order to show the american culture on how other cultures are dealt with in parties.,A high school is hosting an event.,1,0,0
-35,35,The school is having a special event in order to show the american culture on how other cultures are dealt with in parties.,A school is hosting an event.,0,0,0
-36,36,High fashion ladies wait outside a tram beside a crowd of people in the city.,The women do not care what clothes they wear.,2,0,0
-37,37,High fashion ladies wait outside a tram beside a crowd of people in the city.,Women are waiting by a tram.,0,0,0
-38,38,High fashion ladies wait outside a tram beside a crowd of people in the city.,The women enjoy having a good fashion sense.,1,0,0
-39,39,"A man, woman, and child enjoying themselves on a beach.","A child with mom and dad, on summer vacation at the beach.",1,0,0
-40,40,"A man, woman, and child enjoying themselves on a beach.",A family of three is at the beach.,0,0,0
-41,41,"A man, woman, and child enjoying themselves on a beach.",A family of three is at the mall shopping.,2,0,0
-42,42,People waiting to get on a train or just getting off.,The people waiting on the train are sitting.,1,0,0
-43,43,People waiting to get on a train or just getting off.,There are people just getting on a train,0,0,0
-44,44,People waiting to get on a train or just getting off.,There are people waiting on a train.,0,0,0
-45,45,A couple playing with a little boy on the beach.,A couple are playing with a young child outside.,0,0,0
-46,46,A couple playing with a little boy on the beach.,A couple are playing frisbee with a young child at the beach.,1,0,0
-47,47,A couple playing with a little boy on the beach.,A couple watch a little girl play by herself on the beach.,2,0,0
-48,48,A couple play in the tide with their young son.,The family is sitting down for dinner.,2,1,2
-49,49,A couple play in the tide with their young son.,The family is outside.,0,1,1
-50,50,A couple play in the tide with their young son.,The family is on vacation.,1,1,12
-51,51,A man and a woman cross the street in front of a pizza and gyro restaurant.,The people are standing still on the curb.,2,0,0
-52,52,A man and a woman cross the street in front of a pizza and gyro restaurant.,"Near a couple of restaurants, two people walk across the street.",0,0,0
-53,53,A man and a woman cross the street in front of a pizza and gyro restaurant.,The couple are walking across the street together.,1,0,0
-54,54,A woman in a green jacket and hood over her head looking towards a valley.,The woman is nake.,2,0,0
-55,55,A woman in a green jacket and hood over her head looking towards a valley.,The woman is cold.,1,0,2
-56,56,A woman in a green jacket and hood over her head looking towards a valley.,The woman is wearing green.,0,0,0
-57,57,Woman in white in foreground and a man slightly behind walking with a sign for John's Pizza and Gyro in the background.,The man with the sign is caucasian.,1,0,0
-58,58,Woman in white in foreground and a man slightly behind walking with a sign for John's Pizza and Gyro in the background.,They are protesting outside the capital.,2,0,0
-59,59,Woman in white in foreground and a man slightly behind walking with a sign for John's Pizza and Gyro in the background.,A woman in white.,0,0,30
-60,60,Woman in white in foreground and a man slightly behind walking with a sign for John's Pizza and Gyro in the background.,A man is advertising for a restaurant.,0,0,0
-61,61,Woman in white in foreground and a man slightly behind walking with a sign for John's Pizza and Gyro in the background.,The woman is wearing black.,2,0,0
-62,62,Woman in white in foreground and a man slightly behind walking with a sign for John's Pizza and Gyro in the background.,A man and a woman walk down a crowded city street.,1,0,0
-63,63,Woman in white in foreground and a man slightly behind walking with a sign for John's Pizza and Gyro in the background.,The woman is wearing white.,0,0,0
-64,64,Woman in white in foreground and a man slightly behind walking with a sign for John's Pizza and Gyro in the background.,They are working for John's Pizza.,1,0,0
-65,65,Woman in white in foreground and a man slightly behind walking with a sign for John's Pizza and Gyro in the background.,Olympic swimming.,2,0,1118
-66,66,Woman in white in foreground and a man slightly behind walking with a sign for John's Pizza and Gyro in the background.,A man and a soman are eating together at John's Pizza and Gyro.,2,0,0
-67,67,Woman in white in foreground and a man slightly behind walking with a sign for John's Pizza and Gyro in the background.,They are walking with a sign.,0,0,0
-68,68,Woman in white in foreground and a man slightly behind walking with a sign for John's Pizza and Gyro in the background.,The woman is waiting for a friend.,1,0,0
-69,69,Woman in white in foreground and a man slightly behind walking with a sign for John's Pizza and Gyro in the background.,The man is sitting down while he has a sign for John's Pizza and Gyro in his arms.,2,0,0
-70,70,Woman in white in foreground and a man slightly behind walking with a sign for John's Pizza and Gyro in the background.,The woman and man are outdoors.,0,0,0
-71,71,Woman in white in foreground and a man slightly behind walking with a sign for John's Pizza and Gyro in the background.,A woman ordering pizza.,1,0,0
-72,72,"Two adults, one female in white, with shades and one male, gray clothes, walking across a street, away from a eatery with a blurred image of a dark colored red shirted person in the foreground.",The people are related.,1,0,0
-73,73,"Two adults, one female in white, with shades and one male, gray clothes, walking across a street, away from a eatery with a blurred image of a dark colored red shirted person in the foreground.",Two adults run across the street to get away from a red shirted person chasing them.,2,0,0
-74,74,"Two adults, one female in white, with shades and one male, gray clothes, walking across a street, away from a eatery with a blurred image of a dark colored red shirted person in the foreground.",The adults are both male and female.,0,0,0
-75,75,"Two adults, one female in white, with shades and one male, gray clothes, walking across a street, away from a eatery with a blurred image of a dark colored red shirted person in the foreground.",Two people walk home after a tasty steak dinner.,1,0,0
-76,76,"Two adults, one female in white, with shades and one male, gray clothes, walking across a street, away from a eatery with a blurred image of a dark colored red shirted person in the foreground.",Two adults swimming in water,2,0,0
-77,77,"Two adults, one female in white, with shades and one male, gray clothes, walking across a street, away from a eatery with a blurred image of a dark colored red shirted person in the foreground.",Two adults walk across a street.,0,0,0
-78,78,"Two adults, one female in white, with shades and one male, gray clothes, walking across a street, away from a eatery with a blurred image of a dark colored red shirted person in the foreground.",Two people ride bicycles into a tunnel.,2,0,0
-79,79,"Two adults, one female in white, with shades and one male, gray clothes, walking across a street, away from a eatery with a blurred image of a dark colored red shirted person in the foreground.",Two people walk away from a restaurant across a street.,0,0,0
-80,80,"Two adults, one female in white, with shades and one male, gray clothes, walking across a street, away from a eatery with a blurred image of a dark colored red shirted person in the foreground.",Two adults walking across a road near the convicted prisoner dressed in red,1,0,0
-81,81,"Two adults, one female in white, with shades and one male, gray clothes, walking across a street, away from a eatery with a blurred image of a dark colored red shirted person in the foreground.",Two friends cross a street.,1,0,0
-82,82,"Two adults, one female in white, with shades and one male, gray clothes, walking across a street, away from a eatery with a blurred image of a dark colored red shirted person in the foreground.",Some people board a train.,2,0,0
-83,83,"Two adults, one female in white, with shades and one male, gray clothes, walking across a street, away from a eatery with a blurred image of a dark colored red shirted person in the foreground.",Two adults walk across the street.,0,0,0
-84,84,"Two adults, one female in white, with shades and one male, gray clothes, walking across a street, away from a eatery with a blurred image of a dark colored red shirted person in the foreground.",Two adults walking across a road,0,0,0
-85,85,"Two adults, one female in white, with shades and one male, gray clothes, walking across a street, away from a eatery with a blurred image of a dark colored red shirted person in the foreground.",There are no women in the picture.,2,0,6
-86,86,"Two adults, one female in white, with shades and one male, gray clothes, walking across a street, away from a eatery with a blurred image of a dark colored red shirted person in the foreground.",Two adults walk across the street to get away from a red shirted person who is chasing them.,1,0,0
-87,87,"A woman wearing all white and eating, walks next to a man holding a briefcase.",A married couple is sleeping.,2,0,0
-88,88,"A woman wearing all white and eating, walks next to a man holding a briefcase.",A female is next to a man.,0,0,0
-89,89,"A woman wearing all white and eating, walks next to a man holding a briefcase.",A married couple is walking next to each other.,1,0,0
-90,90,"A woman is walking across the street eating a banana, while a man is following with his briefcase.",Nobody has food.,2,1,2
-91,91,"A woman is walking across the street eating a banana, while a man is following with his briefcase.","A woman eats a banana and walks across a street, and there is a man trailing behind her.",0,1,0
-92,92,"A woman is walking across the street eating a banana, while a man is following with his briefcase.",The woman and man are playing baseball together.,2,1,0
-93,93,"A woman is walking across the street eating a banana, while a man is following with his briefcase.",two coworkers cross pathes on a street,1,1,0
-94,94,"A woman is walking across the street eating a banana, while a man is following with his briefcase.","A woman eats ice cream walking down the sidewalk, and there is another woman in front of her with a purse.",2,1,0
-95,95,"A woman is walking across the street eating a banana, while a man is following with his briefcase.",The mans briefcase is for work.,1,1,0
-96,96,"A woman is walking across the street eating a banana, while a man is following with his briefcase.",A person eating.,0,1,0
-97,97,"A woman is walking across the street eating a banana, while a man is following with his briefcase.",A person that is hungry.,1,1,0
-98,98,"A woman is walking across the street eating a banana, while a man is following with his briefcase.",An actress and her favorite assistant talk a walk in the city.,1,1,0
-99,99,"A woman is walking across the street eating a banana, while a man is following with his briefcase.",a woman eating a banana crosses a street,0,1,2
-100,100,"A woman is walking across the street eating a banana, while a man is following with his briefcase.",the woman is a seductress,1,1,5
+,doc_id,premise,hypothesis,label,premise_count,hypothesis_count,_id
+101,101,"A woman is walking across the street eating a banana, while a man is following with his briefcase.",a woman sits for lunch,2,1,0,65e9395da8c3ca52e9c17a1b
+102,102,"A woman is walking across the street eating a banana, while a man is following with his briefcase.",the woman is having coffee at the cafe,2,1,0,65e9395da8c3ca52e9c17a1c
+103,103,"A woman is walking across the street eating a banana, while a man is following with his briefcase.",The woman is eating a banana.,0,1,0,65e9395da8c3ca52e9c17a1d
+104,104,"A woman is walking across the street eating a banana, while a man is following with his briefcase.",the woman is outside,0,1,220,65e9395da8c3ca52e9c17a1e
+105,105,A skier slides along a metal rail.,A skier is near the rail looking down.,1,0,0,65e9395ea8c3ca52e9c17a1f
+106,106,A skier slides along a metal rail.,A skier is near the rail.,0,0,0,65e9395ea8c3ca52e9c17a20
+107,107,A skier slides along a metal rail.,A skier is away from the rail.,2,0,0,65e9395ea8c3ca52e9c17a21
+108,108,A person on skis on a rail at night.,The woman eats a car,2,0,0,65e9395ea8c3ca52e9c17a22
+109,109,A person on skis on a rail at night.,The person skiis,0,0,0,65e9395ea8c3ca52e9c17a23
+110,110,A person on skis on a rail at night.,They are fantastic skiiers,1,0,0,65e9395ea8c3ca52e9c17a24
+111,111,A skier in electric green on the edge of a ramp made of metal bars.,The skier was on the edge of the ramp.,1,0,0,65e9395fa8c3ca52e9c17a25
+112,112,A skier in electric green on the edge of a ramp made of metal bars.,The brightly dressed skier slid down the race course.,0,0,0,65e9395fa8c3ca52e9c17a26
+113,113,A skier in electric green on the edge of a ramp made of metal bars.,The jogger ran through the streets.,2,0,0,65e9395fa8c3ca52e9c17a27
+114,114,A yellow uniformed skier is performing a trick across a railed object.,A snowboarder is riding a ski lift.,2,0,0,65e9395fa8c3ca52e9c17a28
+115,115,A yellow uniformed skier is performing a trick across a railed object.,A skier is competing in a competition.,1,0,0,65e9395fa8c3ca52e9c17a29
+116,116,A yellow uniformed skier is performing a trick across a railed object.,Somebody is engaging in winter sports.,0,0,0,65e93960a8c3ca52e9c17a2a
+117,117,A blond man is drinking from a public fountain.,The man is drinking water.,0,0,8,65e93960a8c3ca52e9c17a2b
+118,118,A blond man is drinking from a public fountain.,The man is very thirsty.,1,0,1,65e93960a8c3ca52e9c17a2c
+119,119,A blond man is drinking from a public fountain.,The man is drinking coffee.,2,0,5,65e93960a8c3ca52e9c17a2d
+120,120,Wet brown dog swims towards camera.,The dog is sleeping in his bed.,2,0,0,65e93960a8c3ca52e9c17a2e
+121,121,Wet brown dog swims towards camera.,A dog is playing fetch in a pond.,1,0,0,65e93960a8c3ca52e9c17a2f
+122,122,Wet brown dog swims towards camera.,A dog is in the water.,0,0,0,65e93961a8c3ca52e9c17a30
+123,123,Closeup image of a dog swimming.,A cat reluctantly takes a bath.,2,0,0,65e93961a8c3ca52e9c17a31
+124,124,Closeup image of a dog swimming.,An underwater camera takes a photo of a puppy.,1,0,0,65e93961a8c3ca52e9c17a32
+125,125,Closeup image of a dog swimming.,A dog swims in a body of water.,0,0,0,65e93961a8c3ca52e9c17a33
+126,126,The furry brown dog is swimming in the ocean.,A dog is chasing a fish.,1,1,0,65e93961a8c3ca52e9c17a34
+127,127,The furry brown dog is swimming in the ocean.,A dog is swimming.,0,1,4,65e93962a8c3ca52e9c17a35
+128,128,The furry brown dog is swimming in the ocean.,A dog is running around the yard.,2,1,0,65e93962a8c3ca52e9c17a36
+129,129,A big brown dog swims towards the camera.,A dog is chasing a stick.,2,0,0,65e93962a8c3ca52e9c17a37
+130,130,A big brown dog swims towards the camera.,A photographer is taking pictures of a dog.,1,0,0,65e93962a8c3ca52e9c17a38
+131,131,A big brown dog swims towards the camera.,A dog swims towards the camera.,0,0,0,65e93962a8c3ca52e9c17a39
+132,132,"A man wearing black with a gray hat, holding a pitchfork, directs a horse-drawn cart.",The farmer wearing a gray hat is driving a horse-drawn cart.,1,0,0,65e93962a8c3ca52e9c17a3a
+133,133,"A man wearing black with a gray hat, holding a pitchfork, directs a horse-drawn cart.",The man with the gray hat and pitchfork is directing the cart.,0,0,0,65e93963a8c3ca52e9c17a3b
+134,134,"A man wearing black with a gray hat, holding a pitchfork, directs a horse-drawn cart.",The woman in a blue dress is hitching a horse to a cart.,2,0,0,65e93963a8c3ca52e9c17a3c
+135,135,"A man is leading a Clydesdale up a hay road, within a Old Country.",A man is walking with his horse up a country road.,0,0,0,65e93963a8c3ca52e9c17a3d
+136,136,"A man is leading a Clydesdale up a hay road, within a Old Country.",A woman in a gray business suit is drinking tea.,2,0,0,65e93963a8c3ca52e9c17a3e
+137,137,"A man is leading a Clydesdale up a hay road, within a Old Country.",A man in a straw hat and overalls is walking with his horse up a country road.,1,0,0,65e93963a8c3ca52e9c17a3f
+138,138,A farmer fertilizing his garden with manure with a horse and wagon.,The man is fertilizering his garden.,0,1,0,65e93963a8c3ca52e9c17a40
+139,139,A farmer fertilizing his garden with manure with a horse and wagon.,The man is on the city street with his horse and wagon.,2,1,0,65e93964a8c3ca52e9c17a41
+140,140,A farmer fertilizing his garden with manure with a horse and wagon.,The man is in an open field with a horse and wagon.,1,1,0,65e93964a8c3ca52e9c17a42
+141,141,A white horse is pulling a cart while a man stands and watches.,A horse is hauling goods.,1,1,0,65e93964a8c3ca52e9c17a43
+142,142,A white horse is pulling a cart while a man stands and watches.,An animal is walking outside.,0,1,0,65e93964a8c3ca52e9c17a44
+143,143,A white horse is pulling a cart while a man stands and watches.,A man is watching a horse race.,2,1,0,65e93964a8c3ca52e9c17a45
+144,144,A small group of church-goers watch a choir practice.,A group watches a practice.,0,0,0,65e93964a8c3ca52e9c17a46
+145,145,A small group of church-goers watch a choir practice.,A choir performs in front of packed crowd.,-1,0,0,65e93965a8c3ca52e9c17a47
+146,146,A small group of church-goers watch a choir practice.,The pastor and elders watch the choir to make sure they are good.,1,0,0,65e93965a8c3ca52e9c17a48
+147,147,A dog drops a red disc on a beach.,a dog catch the ball on a beach,2,1,0,65e93965a8c3ca52e9c17a49
+148,148,A dog drops a red disc on a beach.,a dog drops a disc with a boy,1,1,0,65e93965a8c3ca52e9c17a4a
+149,149,A dog drops a red disc on a beach.,a dog drops a red disc,0,1,0,65e93965a8c3ca52e9c17a4b
+150,150,A man and a woman are walking on a street at the top of a hill.,A married couple walks atop a hill.,1,0,0,65e93965a8c3ca52e9c17a4c
+151,151,A man and a woman are walking on a street at the top of a hill.,A man and woman walk on a street.,0,0,0,65e93966a8c3ca52e9c17a4d
+152,152,A man and a woman are walking on a street at the top of a hill.,Two men play catch on a hill.,2,0,0,65e93966a8c3ca52e9c17a4e
+153,153,An elderly man is drinking orange juice at a cafe.,An elderly man is drinking apple juice at a bar.,2,0,0,65e93966a8c3ca52e9c17a4f
+154,154,An elderly man is drinking orange juice at a cafe.,An older gentleman is enjoying his orange juice at a new cafe.,1,0,0,65e93966a8c3ca52e9c17a50
+155,155,An elderly man is drinking orange juice at a cafe.,An old man is enjoying a beverage at a cafe.,0,0,0,65e93966a8c3ca52e9c17a51
+156,156,A couple holding hands walks down a street.,Two men hold hands while walking down the street.,1,0,0,65e93966a8c3ca52e9c17a52
+157,157,A couple holding hands walks down a street.,There are people sitting on the side of the road.,2,0,0,65e93967a8c3ca52e9c17a53
+158,158,A couple holding hands walks down a street.,People are holding hands and walking.,0,0,0,65e93967a8c3ca52e9c17a54
+159,159,A couple walk through a white brick town.,People are walking outdoors.,0,0,1,65e93967a8c3ca52e9c17a55
+160,160,A couple walk through a white brick town.,A man and woman walk in a brown brick city.,2,0,0,65e93967a8c3ca52e9c17a56
+161,161,A couple walk through a white brick town.,A man and woman walk through a big city.,1,0,0,65e93967a8c3ca52e9c17a57
+162,162,Children going home from school.,The children are at the library.,2,1,1,65e93968a8c3ca52e9c17a58
+163,163,Children going home from school.,The school children head home.,0,1,0,65e93968a8c3ca52e9c17a59
+164,164,Children going home from school.,The children are walking in the afternooon.,1,1,0,65e93968a8c3ca52e9c17a5a
+165,165,People listening to a choir in a Catholic church.,People are listening to a metal band.,2,0,0,65e93968a8c3ca52e9c17a5b
+166,166,People listening to a choir in a Catholic church.,Choir singing in mass.,0,0,0,65e93968a8c3ca52e9c17a5c
+167,167,People listening to a choir in a Catholic church.,People are in mass for a first communion,1,0,0,65e93969a8c3ca52e9c17a5d
+168,168,Bicyclists waiting at an intersection.,A bicyclist is sitting down having lunch at the mall.,2,0,0,65e93969a8c3ca52e9c17a5e
+169,169,Bicyclists waiting at an intersection.,The bicyclists are outside.,0,0,0,65e93969a8c3ca52e9c17a5f
+170,170,Bicyclists waiting at an intersection.,Bicyclists waiting for a car to pass.,1,0,0,65e93969a8c3ca52e9c17a60
+171,171,Bicyclists waiting at an intersection.,A person on a bike is waiting while the light is green.,1,0,2,65e93969a8c3ca52e9c17a61
+172,172,Bicyclists waiting at an intersection.,The bicycles are on a road.,0,0,0,65e9396aa8c3ca52e9c17a62
+173,173,Bicyclists waiting at an intersection.,A person on a bike is near a street.,0,0,0,65e9396aa8c3ca52e9c17a63
+174,174,Bicyclists waiting at an intersection.,Bikers stop and wait for traffic at the intersection.,0,0,0,65e9396aa8c3ca52e9c17a64
+175,175,Bicyclists waiting at an intersection.,The bicyclists ride through the mall on their bikes.,2,0,2,65e9396aa8c3ca52e9c17a65
+176,176,Bicyclists waiting at an intersection.,Bicyclists waiting their turn to cross.,0,0,0,65e9396aa8c3ca52e9c17a66
+177,177,Bicyclists waiting at an intersection.,Bicyclists riding along a freeway.,2,0,0,65e9396aa8c3ca52e9c17a67
+178,178,Bicyclists waiting at an intersection.,The bicyclists are dead.,2,0,0,65e9396ba8c3ca52e9c17a68
+179,179,Bicyclists waiting at an intersection.,The bicyclists are riding to the book store.,1,0,0,65e9396ba8c3ca52e9c17a69
+180,180,Bicyclists waiting at an intersection.,The bicyclists are in a race.,1,0,0,65e9396ba8c3ca52e9c17a6a
+181,181,Bicyclists waiting at an intersection.,The bicyclists are at home.,2,0,0,65e9396ba8c3ca52e9c17a6b
+182,182,Bicyclists waiting at an intersection.,A group of bicyclists remain on the sidewalk at the intersection.,1,0,0,65e9396ba8c3ca52e9c17a6c
+183,183,People waiting at a light on bikes.,A bunch of friends are on a boat,2,0,0,65e9396ba8c3ca52e9c17a6d
+184,184,People waiting at a light on bikes.,People with bikes.,0,0,7,65e9396ca8c3ca52e9c17a6e
+185,185,People waiting at a light on bikes.,There are people on bikes at a light,1,0,0,65e9396ca8c3ca52e9c17a6f
+186,186,People waiting at a light on bikes.,The people are inside waiting.,2,0,0,65e9396ca8c3ca52e9c17a70
+187,187,People waiting at a light on bikes.,There are some people outside.,0,0,37,65e9396ca8c3ca52e9c17a71
+188,188,People waiting at a light on bikes.,People are on their bikes.,0,0,0,65e9396ca8c3ca52e9c17a72
+189,189,People waiting at a light on bikes.,The people are riding their bikes to the gym.,1,0,0,65e9396da8c3ca52e9c17a73
+190,190,People waiting at a light on bikes.,People biking through the city.,1,0,0,65e9396da8c3ca52e9c17a74
+191,191,People waiting at a light on bikes.,The people are on bikes.,0,0,0,65e9396da8c3ca52e9c17a75
+192,192,People waiting at a light on bikes.,There is traffic next to the bikes.,1,0,0,65e9396da8c3ca52e9c17a76
+193,193,People waiting at a light on bikes.,The people are running a red light.,2,0,0,65e9396da8c3ca52e9c17a77
+194,194,People waiting at a light on bikes.,People in a car race.,2,0,0,65e9396da8c3ca52e9c17a78
+195,195,People waiting at a light on bikes.,Men and women outside on a street corner.,0,0,0,65e9396ea8c3ca52e9c17a79
+196,196,People waiting at a light on bikes.,A ladybug has landed on a beautiful pink rose.,2,0,0,65e9396ea8c3ca52e9c17a7a
+197,197,People waiting at a light on bikes.,"Men and women on their motorcycles, wearing helmets and protective jackets.",1,0,0,65e9396ea8c3ca52e9c17a7b
+198,198,People on bicycles waiting at an intersection.,The people are on skateboards.,2,1,0,65e9396ea8c3ca52e9c17a7c
+199,199,People on bicycles waiting at an intersection.,People are riding their bicycles.,0,1,0,65e9396ea8c3ca52e9c17a7d
+200,200,People on bicycles waiting at an intersection.,There is a bike race happening right now.,1,1,0,65e9396ea8c3ca52e9c17a7e
