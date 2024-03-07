@@ -21,7 +21,7 @@ DEFAULT_CONFIG_LOCATION = PROJECT_ROOT / "es_config.yml"
 
 
 @cache
-def es_init(config: Path = DEFAULT_CONFIG_LOCATION, timeout: int = 30) -> AsyncElasticsearch:
+def es_init(config: Path = DEFAULT_CONFIG_LOCATION, timeout: int = 30) -> Elasticsearch:
     """
     :param config: Path to the config yaml file, containing `cloud_id` and `api_key` fields.
     :return: Authenticated ElasticSearch client.
@@ -36,7 +36,7 @@ def es_init(config: Path = DEFAULT_CONFIG_LOCATION, timeout: int = 30) -> AsyncE
             f"Please specify ES_API_KEY environment variable or add api_key to {DEFAULT_CONFIG_LOCATION}."
         )
 
-    es = AsyncElasticsearch(
+    es = Elasticsearch(
         cloud_id=cloud_id,
         api_key=api_key,
         retry_on_timeout=True,
