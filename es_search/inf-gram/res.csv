@@ -1,0 +1,2 @@
+,doc_id,premise,hypothesis,label,premise_count,premise_count_raw,hypothesis_count,hypothesis_count_raw
+0,0,A person on a horse jumps over a broken down airplane.,A person is training his horse for a competition.,1,71,"{""total"": 25, ""successful"": 25, ""skipped"": 0, ""failed"": 0}",62,"{""total"": 25, ""successful"": 25, ""skipped"": 0, ""failed"": 0}"
