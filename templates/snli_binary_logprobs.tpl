@@ -1,0 +1,1 @@
+Given "{{premise}}", "{{hypothesis}}" is {{bool_str}}.
