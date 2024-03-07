@@ -1,0 +1,1 @@
+Question: Given that "{{premise}}". Is {{hypothesis}} true or false? The answer is:
