@@ -107,7 +107,7 @@ def main():
     all_tasks = []
     if not os.path.exists("../inf-gram"):
         os.makedirs("../inf-gram")
-    with ThreadPoolExecutor(20) as pool:
+    with ThreadPoolExecutor(5) as pool:
         print(f"submitting {len(dataset)} tasks")
         for index, example in enumerate(tqdm_instance):
             premise = example["premise"].strip()
