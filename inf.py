@@ -104,11 +104,11 @@ async def main():
         if index % 100 == 0:
             df = pd.DataFrame.from_dict(data, orient='index')
             df.to_csv(output_file_name_csv)
-            df.to_parquet(output_file_name_parquet)
+            # df.to_parquet(output_file_name_parquet)
 
     df = pd.DataFrame.from_dict(data, orient='index')
     df.to_csv(output_file_name_csv)
-    df.to_parquet(output_file_name_parquet)
+    # df.to_parquet(output_file_name_parquet)
 
 
 if __name__ == '__main__':
