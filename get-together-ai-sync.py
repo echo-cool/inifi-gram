@@ -174,7 +174,7 @@ def process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base",
 
 def main():
     num_instance = None
-    process_data_set(dataset, model="allenai/OLMo-7B-Instruct", num_instance=num_instance)
+    process_data_set(dataset, model="allenai/OLMo-7B", num_instance=num_instance)
     # process_data_set(dataset, model="allenai/OLMo-7B", num_instance=num_instance)
 
 
