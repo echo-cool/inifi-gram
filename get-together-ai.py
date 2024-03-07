@@ -1,8 +1,8 @@
 """
-@Time ： 2024/2/29 16:10
-@Auth ： Yizhi Hao
-@File ：get-together-ai.py
-@IDE ：PyCharm
+@Time ï¼š 2024/2/29 16:10
+@Auth ï¼š Yizhi Hao
+@File ï¼šget-together-ai.py
+@IDE ï¼šPyCharm
 """
 import asyncio
 import aiohttp
@@ -16,6 +16,7 @@ from tqdm import tqdm
 from dotenv import load_dotenv
 from jinja2 import Environment, FileSystemLoader
 import pandas as pd
+import time
 
 load_dotenv()
 TOGETHER_AI_API_KEY = os.getenv("TOGETHER_AI_API_KEY")
@@ -46,6 +47,7 @@ def get_jinja_environment() -> Environment:
 
 
 def get_together_ai(prompt, model, max_tokens, stop=["</s>"]):
+    #time.sleep(0.5)
     url = "https://api.together.xyz/v1/completions"
     payload = {
         "model": model,
@@ -89,7 +91,7 @@ def process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base",
         doc_id = example["id"]
 
         if doc_id in existing_ids:
-            print(f"Skipping {doc_id} as it already exists in the dataset.")
+            tqdm.write(f"Skipping {doc_id} as it already exists in the dataset.")
             continue
 
         premise = example["premise"]
@@ -97,7 +99,7 @@ def process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base",
         label_id = example["label"]
 
         if label_id not in id_label_mapping:
-            print(f"Skipping {doc_id} as it does not have a valid label.")
+            tqdm.write(f"Skipping {doc_id} as it does not have a valid label.")
             continue
 
         label = id_label_mapping[label_id]
@@ -113,15 +115,15 @@ def process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base",
             raw_prediction_id = "invalid"
         clean_prediction_id = label_id_mapping[raw_prediction_id]
 
-        if clean_prediction_id == -1:
-            print(f"Skipping rationale for {doc_id} as it has an invalid prediction.")
-            raw_rationale = ""
-        else:
-            rationale_tmpl = get_jinja_environment().get_template("snli_rationale.tpl")
-            rationale_prompt = rationale_tmpl.render(premise=premise, hypothesis=hypothesis,
-                                                     judgment=id_verb_mapping[clean_prediction_id])
-            raw_rationale = get_together_ai(rationale_prompt, model, 150, stop=["</s>"])
-
+        #if clean_prediction_id == -1:
+        #    tqdm.write(f"Skipping rationale for {doc_id} as it has an invalid prediction.")
+        #    raw_rationale = ""
+        #else:
+        #    #rationale_tmpl = get_jinja_environment().get_template("snli_rationale.tpl")
+        #    #rationale_prompt = rationale_tmpl.render(premise=premise, hypothesis=hypothesis,
+        #                                             judgment=id_verb_mapping[clean_prediction_id])
+        #    #raw_rationale = get_together_ai(rationale_prompt, model, 150, stop=["</s>"])
+        raw_rationale=""
         existing_dct[doc_id] = {
             "timestamp": timestamp,
             "premise": premise,
@@ -131,9 +133,9 @@ def process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base",
             "prediction_id": clean_prediction_id,
             "rationale": raw_rationale.strip()
         }
-
+        print(existing_dct[doc_id])
         existing_ids.add(doc_id)
-        if doc_id % 100 == 0:
+        if doc_id % 1 == 0:
             df = pd.DataFrame.from_dict(existing_dct, orient='index')
             df.reset_index(inplace=True)
             df.rename(columns={'index': 'id'}, inplace=True)
