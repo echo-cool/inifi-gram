@@ -10,7 +10,19 @@ import os
 
 import pandas as pd
 from datasets import load_from_disk
+from pymongo import MongoClient
 from tqdm import tqdm
+
+uri = input("Please input the MongoDB URI: ")
+
+# Create a new client and connect to the server
+client = MongoClient(uri)
+try:
+    client.admin.command('ping')
+    print("Pinged your deployment. You successfully connected to MongoDB!")
+except Exception as e:
+    print(e)
+    exit()
 
 URL = "https://api.infini-gram.io/"
 dataset = load_from_disk("snli_with_id")
@@ -62,6 +74,8 @@ async def main():
         hypothesis = example["hypothesis"]
         doc_id = example["id"]
         label = example["label"]
+        if client["infini-gram"][corpus_name].find_one({"doc_id": doc_id}) is not None:
+            continue
 
         premise_count = await get_inf_gram_count(premise)
 
@@ -72,8 +86,7 @@ async def main():
             premise_count=premise_count,
             hypothesis_count=hypothesis_count,
         )
-
-        data[doc_id] = {
+        data_entry = {
             'doc_id': doc_id,
             "premise": premise,
             "hypothesis": hypothesis,
@@ -81,6 +94,12 @@ async def main():
             "premise_count": premise_count,
             "hypothesis_count": hypothesis_count
         }
+
+        data[doc_id] = data_entry
+        if client["infini-gram"][corpus_name].find_one({"doc_id": doc_id}) is None:
+            client["infini-gram"][corpus_name].insert_one(data_entry)
+        else:
+            client["infini-gram"][corpus_name].update_one({"doc_id": doc_id}, {"$set": data_entry})
 
         if index % 100 == 0:
             df = pd.DataFrame.from_dict(data, orient='index')
