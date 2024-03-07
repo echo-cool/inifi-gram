@@ -4,8 +4,7 @@
 @File ：get-together-ai.py
 @IDE ：PyCharm
 """
-import asyncio
-import aiohttp
+
 import os
 from itertools import islice
 import requests
@@ -16,12 +15,8 @@ from tqdm import tqdm
 from dotenv import load_dotenv
 from jinja2 import Environment, FileSystemLoader
 import pandas as pd
-import time
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from ratelimit import limits
-import warnings
-warnings.filterwarnings("ignore")
 
 load_dotenv()
 TOGETHER_AI_API_KEY = os.getenv("TOGETHER_AI_API_KEY")
@@ -77,21 +72,15 @@ def get_together_ai(prompt, model, max_tokens, stop=["</s>"]):
         "Authorization": f"Bearer {TOGETHER_AI_API_KEY}"
     }
 
-    try:
-        response = requests.post(url, json=payload, headers=headers, timeout=5)
-        if response.status_code == 200:
-            if response.text:
-                res = response.json()
-                return res
-            else:
-                raise Exception("Empty response body.")
+    response = requests.post(url, json=payload, headers=headers, timeout=5)
+    if response.status_code == 200:
+        if response.text:
+            res = response.json()
+            return res
         else:
-            print(f"Failed to get response from Together AI: HTTP {response.status_code}")
-            print(f"Response body: {response.text}")
-            return ""
-    except Exception as e:
-        print(e)
-        return ""
+            raise Exception("Failed to get response from Together AI: Empty response")
+    else:
+        raise Exception(f"Failed to get response from Together AI: HTTP {response.status_code}")
 
 
 def process_example(example, model):
@@ -100,12 +89,12 @@ def process_example(example, model):
     premise = example["premise"]
     hypothesis = example["hypothesis"]
     label_id = example["label"]
-    label_bool = label_bool_mapping[label_id]
-    label_bool_str = bool_str_mapping[label_bool]
 
     if label_id not in id_label_mapping:
-        print(f"Skipping {doc_id} as it does not have a valid label.")
-        return None
+        raise Exception(f"Skipping doc_id {doc_id} as it does not have a valid label. Label ID: {label_id}")
+
+    label_bool = label_bool_mapping[label_id]
+    label_bool_str = bool_str_mapping[label_bool]
 
     label = id_label_mapping[label_id]
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -172,6 +161,9 @@ def main(max_workers, dataset, model, num_instance):
             tasks.append(pool.submit(process_example, example, model))
 
         for future in tqdm(as_completed(tasks), desc="Processing tasks", unit=" example"):
+            if future.exception() is not None:
+                print(f"An exception occurred: {future.exception()}")
+                continue
             doc_id, dct = future.result()
             existing_ids.add(doc_id)
             existing_dct[doc_id] = dct
@@ -191,10 +183,10 @@ def main(max_workers, dataset, model, num_instance):
 if __name__ == "__main__":
     if not os.path.exists("together-ai"):
         os.makedirs("together-ai")
-    max_workers = 2
+    max_workers = 5
     dataset = load_from_disk("snli_with_id")
-    model = "allenai/OLMo-7B-Instruct"
-    # model = "allenai/OLMo-7B"
+    # model = "allenai/OLMo-7B-Instruct"
+    model = "allenai/OLMo-7B"
     # num_instance = 10
     num_instance = None
     main(max_workers, dataset, model, num_instance)
