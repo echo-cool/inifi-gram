@@ -25,8 +25,15 @@ from tqdm import tqdm
 from pymongo.mongo_client import MongoClient
 
 uri = input("Please input the MongoDB URI: ")
+
 # Create a new client and connect to the server
 client = MongoClient(uri)
+try:
+    client.admin.command('ping')
+    print("Pinged your deployment. You successfully connected to MongoDB!")
+except Exception as e:
+    print(e)
+    exit()
 
 logger = logging.getLogger(__name__)
 
