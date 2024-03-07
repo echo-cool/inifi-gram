@@ -91,7 +91,7 @@ def process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base",
     if not os.path.exists("together-ai"):
         os.makedirs("together-ai")
 
-    parquet_file_path = f"together-ai/snli_{model.replace('/', '-')}.parquet"
+    parquet_file_path = f"together-ai/snli_sync_{model.replace('/', '-')}.parquet"
 
     if os.path.exists(parquet_file_path):
         existing_dct = pd.read_parquet(parquet_file_path).set_index('id').to_dict(orient='index')
@@ -173,8 +173,9 @@ def process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base",
 
 
 def main():
-    process_data_set(dataset, model="allenai/OLMo-7B-Instruct", num_instance=10)
-    # process_data_set(dataset, model="allenai/OLMo-7B", num_instance=10)
+    num_instance = None
+    process_data_set(dataset, model="allenai/OLMo-7B", num_instance=num_instance)
+    # process_data_set(dataset, model="allenai/OLMo-7B", num_instance=num_instance)
 
 
 if __name__ == "__main__":
