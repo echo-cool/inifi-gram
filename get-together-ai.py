@@ -16,9 +16,12 @@ from tqdm import tqdm
 from dotenv import load_dotenv
 from jinja2 import Environment, FileSystemLoader
 import pandas as pd
-from time import sleep
+import time
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from ratelimit import limits
+import warnings
+warnings.filterwarnings("ignore")
 
 load_dotenv()
 TOGETHER_AI_API_KEY = os.getenv("TOGETHER_AI_API_KEY")
@@ -73,13 +76,19 @@ def get_together_ai(prompt, model, max_tokens, stop=["</s>"]):
         "content-type": "application/json",
         "Authorization": f"Bearer {TOGETHER_AI_API_KEY}"
     }
+
     try:
-        response = requests.post(url, json=payload, headers=headers)
-        if response.status_code != 200:
-            print(response.json())
-            raise Exception(f"Failed to get response from Together AI: {response.status_code}")
-        res = response.json()
-        return res
+        response = requests.post(url, json=payload, headers=headers, timeout=5)
+        if response.status_code == 200:
+            if response.text:
+                res = response.json()
+                return res
+            else:
+                raise Exception("Empty response body.")
+        else:
+            print(f"Failed to get response from Together AI: HTTP {response.status_code}")
+            print(f"Response body: {response.text}")
+            return ""
     except Exception as e:
         print(e)
         return ""
@@ -141,8 +150,8 @@ def process_example(example, model):
     })
 
 
-def main(dataset, model, num_instance):
-    with ThreadPoolExecutor(max_workers=20) as pool:
+def main(max_workers, dataset, model, num_instance):
+    with ThreadPoolExecutor(max_workers=max_workers) as pool:
         parquet_file_path = f"together-ai/snli_{model.replace('/', '-')}.parquet"
 
         if os.path.exists(parquet_file_path):
@@ -153,7 +162,7 @@ def main(dataset, model, num_instance):
             existing_ids = set()
 
         tasks = []
-        for example in islice(dataset, num_instance):
+        for example in tqdm(islice(dataset, num_instance), desc="Submitting tasks", unit=" example"):
             doc_id = example["id"]
 
             if doc_id in existing_ids:
@@ -162,12 +171,12 @@ def main(dataset, model, num_instance):
 
             tasks.append(pool.submit(process_example, example, model))
 
-        for future in as_completed(tasks):
+        for future in tqdm(as_completed(tasks), desc="Processing tasks", unit=" example"):
             doc_id, dct = future.result()
             existing_ids.add(doc_id)
             existing_dct[doc_id] = dct
 
-            if len(existing_dct) % 5 == 0:
+            if len(existing_dct) % 100 == 0:
                 df = pd.DataFrame.from_dict(existing_dct, orient='index')
                 df.reset_index(inplace=True)
                 df.rename(columns={'index': 'id'}, inplace=True)
@@ -182,8 +191,10 @@ def main(dataset, model, num_instance):
 if __name__ == "__main__":
     if not os.path.exists("together-ai"):
         os.makedirs("together-ai")
+    max_workers = 2
     dataset = load_from_disk("snli_with_id")
     model = "allenai/OLMo-7B-Instruct"
     # model = "allenai/OLMo-7B"
-    num_instance = 100
-    main(dataset, model, num_instance)
+    # num_instance = 10
+    num_instance = None
+    main(max_workers, dataset, model, num_instance)
