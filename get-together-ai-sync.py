@@ -110,12 +110,13 @@ def process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base",
         premise = example["premise"]
         hypothesis = example["hypothesis"]
         label_id = example["label"]
-        label_bool = label_bool_mapping[label_id]
-        label_bool_str = bool_str_mapping[label_bool]
 
         if label_id not in id_label_mapping:
             print(f"Skipping {doc_id} as it does not have a valid label.")
             continue
+
+        label_bool = label_bool_mapping[label_id]
+        label_bool_str = bool_str_mapping[label_bool]
 
         label = id_label_mapping[label_id]
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
