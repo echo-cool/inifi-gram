@@ -1,0 +1,1332 @@
+{
+    "30": {
+        "doc_id": 30,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "17": {
+        "doc_id": 17,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "24": {
+        "doc_id": 24,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "41": {
+        "doc_id": 41,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "38": {
+        "doc_id": 38,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "0": {
+        "doc_id": 0,
+        "count": 71,
+        "count_raw": "{\"count\": 71, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "44": {
+        "doc_id": 44,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "15": {
+        "doc_id": 15,
+        "count": 2,
+        "count_raw": "{\"count\": 2, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "22": {
+        "doc_id": 22,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "premise"
+    },
+    "29": {
+        "doc_id": 29,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "premise"
+    },
+    "16": {
+        "doc_id": 16,
+        "count": 2,
+        "count_raw": "{\"count\": 2, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "1": {
+        "doc_id": 1,
+        "count": 47,
+        "count_raw": "{\"count\": 47, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "50": {
+        "doc_id": 50,
+        "count": 1528,
+        "count_raw": "{\"count\": 1528, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "37": {
+        "doc_id": 37,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "5": {
+        "doc_id": 5,
+        "count": 26,
+        "count_raw": "{\"count\": 26, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "premise"
+    },
+    "4": {
+        "doc_id": 4,
+        "count": 26,
+        "count_raw": "{\"count\": 26, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "premise"
+    },
+    "2": {
+        "doc_id": 2,
+        "count": 71,
+        "count_raw": "{\"count\": 71, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "premise"
+    },
+    "6": {
+        "doc_id": 6,
+        "count": 10,
+        "count_raw": "{\"count\": 10, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "premise"
+    },
+    "3": {
+        "doc_id": 3,
+        "count": 26,
+        "count_raw": "{\"count\": 26, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "7": {
+        "doc_id": 7,
+        "count": 10,
+        "count_raw": "{\"count\": 10, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "premise"
+    },
+    "9": {
+        "doc_id": 9,
+        "count": 2,
+        "count_raw": "{\"count\": 2, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "14": {
+        "doc_id": 14,
+        "count": 4,
+        "count_raw": "{\"count\": 4, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "premise"
+    },
+    "8": {
+        "doc_id": 8,
+        "count": 10,
+        "count_raw": "{\"count\": 10, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "23": {
+        "doc_id": 23,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "28": {
+        "doc_id": 28,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "premise"
+    },
+    "21": {
+        "doc_id": 21,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "36": {
+        "doc_id": 36,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "49": {
+        "doc_id": 49,
+        "count": 585,
+        "count_raw": "{\"count\": 585, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "13": {
+        "doc_id": 13,
+        "count": 4,
+        "count_raw": "{\"count\": 4, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "premise"
+    },
+    "20": {
+        "doc_id": 20,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "27": {
+        "doc_id": 27,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "34": {
+        "doc_id": 34,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "31": {
+        "doc_id": 31,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "47": {
+        "doc_id": 47,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "premise"
+    },
+    "35": {
+        "doc_id": 35,
+        "count": 8,
+        "count_raw": "{\"count\": 8, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "48": {
+        "doc_id": 48,
+        "count": 39,
+        "count_raw": "{\"count\": 39, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "12": {
+        "doc_id": 12,
+        "count": 4,
+        "count_raw": "{\"count\": 4, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "19": {
+        "doc_id": 19,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "premise"
+    },
+    "26": {
+        "doc_id": 26,
+        "count": 2,
+        "count_raw": "{\"count\": 2, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "33": {
+        "doc_id": 33,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "premise"
+    },
+    "46": {
+        "doc_id": 46,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "18": {
+        "doc_id": 18,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "premise"
+    },
+    "11": {
+        "doc_id": 11,
+        "count": 2,
+        "count_raw": "{\"count\": 2, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "25": {
+        "doc_id": 25,
+        "count": 2,
+        "count_raw": "{\"count\": 2, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "premise"
+    },
+    "39": {
+        "doc_id": 39,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "32": {
+        "doc_id": 32,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "premise"
+    },
+    "40": {
+        "doc_id": 40,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "10": {
+        "doc_id": 10,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "52": {
+        "doc_id": 52,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "43": {
+        "doc_id": 43,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "45": {
+        "doc_id": 45,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "premise"
+    },
+    "42": {
+        "doc_id": 42,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "51": {
+        "doc_id": 51,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "54": {
+        "doc_id": 54,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "53": {
+        "doc_id": 53,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "56": {
+        "doc_id": 56,
+        "count": 14,
+        "count_raw": "{\"count\": 14, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "57": {
+        "doc_id": 57,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "58": {
+        "doc_id": 58,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "55": {
+        "doc_id": 55,
+        "count": 480,
+        "count_raw": "{\"count\": 480, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "59": {
+        "doc_id": 59,
+        "count": 21911,
+        "count_raw": "{\"count\": 21911, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "60": {
+        "doc_id": 60,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "61": {
+        "doc_id": 61,
+        "count": 85,
+        "count_raw": "{\"count\": 85, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "62": {
+        "doc_id": 62,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "63": {
+        "doc_id": 63,
+        "count": 104,
+        "count_raw": "{\"count\": 104, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "64": {
+        "doc_id": 64,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "70": {
+        "doc_id": 70,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "66": {
+        "doc_id": 66,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "65": {
+        "doc_id": 65,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "premise"
+    },
+    "67": {
+        "doc_id": 67,
+        "count": 2,
+        "count_raw": "{\"count\": 2, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "68": {
+        "doc_id": 68,
+        "count": 3,
+        "count_raw": "{\"count\": 3, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "69": {
+        "doc_id": 69,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "71": {
+        "doc_id": 71,
+        "count": 24,
+        "count_raw": "{\"count\": 24, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "72": {
+        "doc_id": 72,
+        "count": 1032,
+        "count_raw": "{\"count\": 1032, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "73": {
+        "doc_id": 73,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "74": {
+        "doc_id": 74,
+        "count": 2,
+        "count_raw": "{\"count\": 2, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "75": {
+        "doc_id": 75,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "76": {
+        "doc_id": 76,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "77": {
+        "doc_id": 77,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "78": {
+        "doc_id": 78,
+        "count": 2,
+        "count_raw": "{\"count\": 2, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "79": {
+        "doc_id": 79,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "80": {
+        "doc_id": 80,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "81": {
+        "doc_id": 81,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "82": {
+        "doc_id": 82,
+        "count": 4,
+        "count_raw": "{\"count\": 4, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "83": {
+        "doc_id": 83,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "84": {
+        "doc_id": 84,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "85": {
+        "doc_id": 85,
+        "count": 59,
+        "count_raw": "{\"count\": 59, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "86": {
+        "doc_id": 86,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "87": {
+        "doc_id": 87,
+        "count": 40,
+        "count_raw": "{\"count\": 40, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "88": {
+        "doc_id": 88,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "89": {
+        "doc_id": 89,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "90": {
+        "doc_id": 90,
+        "count": 128,
+        "count_raw": "{\"count\": 128, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "91": {
+        "doc_id": 91,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "93": {
+        "doc_id": 93,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "98": {
+        "doc_id": 98,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "96": {
+        "doc_id": 96,
+        "count": 2,
+        "count_raw": "{\"count\": 2, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "premise"
+    },
+    "95": {
+        "doc_id": 95,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "94": {
+        "doc_id": 94,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "101": {
+        "doc_id": 101,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "97": {
+        "doc_id": 97,
+        "count": 99,
+        "count_raw": "{\"count\": 99, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "103": {
+        "doc_id": 103,
+        "count": 2,
+        "count_raw": "{\"count\": 2, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "99": {
+        "doc_id": 99,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "105": {
+        "doc_id": 105,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "92": {
+        "doc_id": 92,
+        "count": 2,
+        "count_raw": "{\"count\": 2, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "premise"
+    },
+    "102": {
+        "doc_id": 102,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "100": {
+        "doc_id": 100,
+        "count": 2,
+        "count_raw": "{\"count\": 2, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "104": {
+        "doc_id": 104,
+        "count": 375,
+        "count_raw": "{\"count\": 375, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "106": {
+        "doc_id": 106,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "107": {
+        "doc_id": 107,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "108": {
+        "doc_id": 108,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "109": {
+        "doc_id": 109,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "premise"
+    },
+    "110": {
+        "doc_id": 110,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "111": {
+        "doc_id": 111,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "112": {
+        "doc_id": 112,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "premise"
+    },
+    "113": {
+        "doc_id": 113,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "117": {
+        "doc_id": 117,
+        "count": 2,
+        "count_raw": "{\"count\": 2, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "premise"
+    },
+    "114": {
+        "doc_id": 114,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "115": {
+        "doc_id": 115,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "116": {
+        "doc_id": 116,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "119": {
+        "doc_id": 119,
+        "count": 27,
+        "count_raw": "{\"count\": 27, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "118": {
+        "doc_id": 118,
+        "count": 6,
+        "count_raw": "{\"count\": 6, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "121": {
+        "doc_id": 121,
+        "count": 5,
+        "count_raw": "{\"count\": 5, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "120": {
+        "doc_id": 120,
+        "count": 6,
+        "count_raw": "{\"count\": 6, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "125": {
+        "doc_id": 125,
+        "count": 4,
+        "count_raw": "{\"count\": 4, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "premise"
+    },
+    "123": {
+        "doc_id": 123,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "126": {
+        "doc_id": 126,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "124": {
+        "doc_id": 124,
+        "count": 4,
+        "count_raw": "{\"count\": 4, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "122": {
+        "doc_id": 122,
+        "count": 48,
+        "count_raw": "{\"count\": 48, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "128": {
+        "doc_id": 128,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "127": {
+        "doc_id": 127,
+        "count": 197,
+        "count_raw": "{\"count\": 197, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "129": {
+        "doc_id": 129,
+        "count": 8,
+        "count_raw": "{\"count\": 8, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "131": {
+        "doc_id": 131,
+        "count": 2,
+        "count_raw": "{\"count\": 2, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "130": {
+        "doc_id": 130,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "138": {
+        "doc_id": 138,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "premise"
+    },
+    "132": {
+        "doc_id": 132,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "133": {
+        "doc_id": 133,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "135": {
+        "doc_id": 135,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "134": {
+        "doc_id": 134,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "137": {
+        "doc_id": 137,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "136": {
+        "doc_id": 136,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "139": {
+        "doc_id": 139,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "140": {
+        "doc_id": 140,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "141": {
+        "doc_id": 141,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "142": {
+        "doc_id": 142,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "143": {
+        "doc_id": 143,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "144": {
+        "doc_id": 144,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "145": {
+        "doc_id": 145,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": -1,
+        "type": "hypothesis"
+    },
+    "149": {
+        "doc_id": 149,
+        "count": 3,
+        "count_raw": "{\"count\": 3, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "premise"
+    },
+    "146": {
+        "doc_id": 146,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "153": {
+        "doc_id": 153,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "154": {
+        "doc_id": 154,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "150": {
+        "doc_id": 150,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "148": {
+        "doc_id": 148,
+        "count": 3,
+        "count_raw": "{\"count\": 3, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "147": {
+        "doc_id": 147,
+        "count": 3,
+        "count_raw": "{\"count\": 3, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "premise"
+    },
+    "152": {
+        "doc_id": 152,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "155": {
+        "doc_id": 155,
+        "count": 2,
+        "count_raw": "{\"count\": 2, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "156": {
+        "doc_id": 156,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "151": {
+        "doc_id": 151,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "premise"
+    },
+    "161": {
+        "doc_id": 161,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "157": {
+        "doc_id": 157,
+        "count": 6,
+        "count_raw": "{\"count\": 6, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "158": {
+        "doc_id": 158,
+        "count": 16,
+        "count_raw": "{\"count\": 16, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "159": {
+        "doc_id": 159,
+        "count": 20,
+        "count_raw": "{\"count\": 20, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "162": {
+        "doc_id": 162,
+        "count": 2,
+        "count_raw": "{\"count\": 2, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "160": {
+        "doc_id": 160,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "163": {
+        "doc_id": 163,
+        "count": 1,
+        "count_raw": "{\"count\": 1, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "164": {
+        "doc_id": 164,
+        "count": 219,
+        "count_raw": "{\"count\": 219, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "166": {
+        "doc_id": 166,
+        "count": 3,
+        "count_raw": "{\"count\": 3, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "165": {
+        "doc_id": 165,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "167": {
+        "doc_id": 167,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "169": {
+        "doc_id": 169,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "168": {
+        "doc_id": 168,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "175": {
+        "doc_id": 175,
+        "count": 2,
+        "count_raw": "{\"count\": 2, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "171": {
+        "doc_id": 171,
+        "count": 2,
+        "count_raw": "{\"count\": 2, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "172": {
+        "doc_id": 172,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "173": {
+        "doc_id": 173,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "170": {
+        "doc_id": 170,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "174": {
+        "doc_id": 174,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "180": {
+        "doc_id": 180,
+        "count": 20,
+        "count_raw": "{\"count\": 20, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "181": {
+        "doc_id": 181,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "177": {
+        "doc_id": 177,
+        "count": 20,
+        "count_raw": "{\"count\": 20, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "premise"
+    },
+    "178": {
+        "doc_id": 178,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "hypothesis"
+    },
+    "183": {
+        "doc_id": 183,
+        "count": 4,
+        "count_raw": "{\"count\": 4, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "premise"
+    },
+    "176": {
+        "doc_id": 176,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "hypothesis"
+    },
+    "182": {
+        "doc_id": 182,
+        "count": 0,
+        "count_raw": "{\"count\": 0, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "hypothesis"
+    },
+    "179": {
+        "doc_id": 179,
+        "count": 20,
+        "count_raw": "{\"count\": 20, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "188": {
+        "doc_id": 188,
+        "count": 4,
+        "count_raw": "{\"count\": 4, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "premise"
+    },
+    "184": {
+        "doc_id": 184,
+        "count": 4,
+        "count_raw": "{\"count\": 4, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "premise"
+    },
+    "186": {
+        "doc_id": 186,
+        "count": 4,
+        "count_raw": "{\"count\": 4, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 2,
+        "type": "premise"
+    },
+    "185": {
+        "doc_id": 185,
+        "count": 4,
+        "count_raw": "{\"count\": 4, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    },
+    "187": {
+        "doc_id": 187,
+        "count": 4,
+        "count_raw": "{\"count\": 4, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 0,
+        "type": "premise"
+    },
+    "189": {
+        "doc_id": 189,
+        "count": 4,
+        "count_raw": "{\"count\": 4, \"_shards\": {\"total\": 25, \"successful\": 25, \"skipped\": 0, \"failed\": 0}}",
+        "label": 1,
+        "type": "premise"
+    }
+}
