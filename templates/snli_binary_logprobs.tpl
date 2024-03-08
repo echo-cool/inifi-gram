@@ -1,1 +1,3 @@
-Given "{{premise}}", "{{hypothesis}}" is {{bool_str}}.
+{{premise}}
+question: {{hypothesis}} true or false?
+answer: {{bool_str}}.

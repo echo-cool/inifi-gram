@@ -16,6 +16,8 @@ from tqdm import tqdm
 from dotenv import load_dotenv
 from jinja2 import Environment, FileSystemLoader
 import pandas as pd
+from transformers import AutoTokenizer
+from utils import load_example
 from time import sleep
 import re
 
@@ -87,7 +89,7 @@ def get_together_ai(prompt, model, max_tokens, stop=["</s>"]):
 
 
 
-def process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base", num_instance=None):
+def process_data_set(dataset, model, tokenizer, num_instance=None):
     if not os.path.exists("together-ai"):
         os.makedirs("together-ai")
 
@@ -121,19 +123,63 @@ def process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base",
         label = id_label_mapping[label_id]
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-        logprobs_tmpl = get_jinja_environment().get_template("snli_binary_logprobs.tpl")
+        # store
+        dct_res = {
+            "timestamp": timestamp,
+            "premise": premise,
+            "hypothesis": hypothesis,
+            "label": label,
+            "target_bool": label_bool_str}
 
+        # testing starts here
+        # logprob
         dct_logprobs = {}
+        flag = False
         for b in [True, False]:
             b_str = bool_str_mapping[b]
-            logprobs_prompt = logprobs_tmpl.render(premise=premise, hypothesis=hypothesis, bool_str=b_str)
+            logprobs_prompt, dct_idx = load_example(premise, hypothesis, b_str, tokenizer)
             res = get_together_ai(logprobs_prompt, model, 1)
-            logprob = sum(res["prompt"][0]["logprobs"]["token_logprobs"][1:])
-            dct_logprobs[b_str] = logprob
 
-        predict_bool_logprob = dct_logprobs["true"] > dct_logprobs["false"]
-        label_bool_logprob = bool_str_mapping[predict_bool_logprob]
+            max_token_idx = max(dct_idx.values(), key=lambda x: x[1])[1]
+            if max_token_idx != len(res["prompt"][0]["logprobs"]["tokens"]):
+                print(f"Token length mismatch. Cannot perform logprob extraction.")
+                flag = True
+                break
 
+            res_token_logprob = res["prompt"][0]["logprobs"]
+            res_token_logprob["token_logprobs"][0] = 0  # first token has no logprob
+            # sequence logprob
+            dct_res["sequence_logprob_" + b_str] = sum(res_token_logprob["token_logprobs"])
+            # standrd logprob
+            dct_res["standard_logprob_" + b_str] = sum(res_token_logprob["token_logprobs"])
+
+        if flag:
+            continue
+
+
+
+
+
+
+            dct_logprobs[b_str] = res["prompt"][0]["logprobs"]
+
+
+
+        # sequence logprob
+        for b_str in bool_str_mapping.values():
+            dct_res["sequence_logprob_" + b_str] = sum(dct_logprobs[b_str]["token_logprobs"][1:])
+        predict_bool = dct_res["sequence_logprob_true"] > dct_res["sequence_logprob_false"]
+        dct_res["sequence_logprob_bool"] = bool_str_mapping[predict_bool]
+
+        # standrd logprob
+
+
+
+        # length-normalized logprob
+
+        # Domain Conditional PMI
+
+        # predict
         predict_tmpl = get_jinja_environment().get_template("snli_binary_predict.tpl")
         predict_prompt = predict_tmpl.render(premise=premise, hypothesis=hypothesis)
         res = get_together_ai(predict_prompt, model, 50, ["</s>"])
@@ -147,18 +193,10 @@ def process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base",
         if label_predict not in ["true", "false"]:
             label_predict = "invalid"
 
-        existing_dct[doc_id] = {
-            "timestamp": timestamp,
-            "premise": premise,
-            "hypothesis": hypothesis,
-            "label": label,
-            "label_bool_str": label_bool_str,
-            "label_true_logprob": dct_logprobs["true"],
-            "label_false_logprob": dct_logprobs["false"],
-            "label_bool_logprob": label_bool_logprob,
-            "raw_output": raw_output,
-            "label_bool_predict": label_predict
-        }
+        dct_res["raw_output"] = raw_output
+        dct_res["predict_bool"] = label_predict
+
+        existing_dct[doc_id] = dct_res
 
         existing_ids.add(doc_id)
         if doc_id % 100 == 0:
@@ -175,7 +213,9 @@ def process_data_set(dataset, model="togethercomputer/RedPajama-INCITE-7B-Base",
 
 def main():
     num_instance = None
-    process_data_set(dataset, model="allenai/OLMo-7B", num_instance=num_instance)
+    model = "allenai/OLMo-7B"
+    tokenizer = AutoTokenizer.from_pretrained(model, trust_remote_code=True)
+    process_data_set(dataset, model=model, tokenizer=tokenizer, num_instance=num_instance)
     # process_data_set(dataset, model="allenai/OLMo-7B", num_instance=num_instance)
 
 
