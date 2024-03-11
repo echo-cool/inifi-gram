@@ -104,7 +104,8 @@ def process_example(example, model, tokenizer):
     dct_logprobs = {}
     for b in [True, False]:
         b_str = bool_str_mapping[b]
-        logprobs_prompt, _ = load_example(premise, hypothesis, b_str, tokenizer)
+        lst_prompt, _ = load_example(premise, hypothesis, b_str, None)
+        logprobs_prompt = "".join([v for k, v in lst_prompt])
         res = get_together_ai(logprobs_prompt, model, 1)
         res = res["prompt"][0]["logprobs"]
         dct_logprobs[b_str] = res
