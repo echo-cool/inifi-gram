@@ -1,6 +1,6 @@
 import pickle
 import pandas as pd
-import tqdm
+from tqdm import tqdm
 from transformers import AutoTokenizer
 from utils import load_example
 import requests
@@ -64,7 +64,7 @@ def main(model, tokenizer):
         dct_dp_logprob[b_str] = sum(res["token_logprobs"][dct_idx["unconditional_hypothesis"][0]:dct_idx["unconditional_hypothesis"][1]])
 
     res_dct = {}
-    for k, v in existing_dct.items():
+    for k, v in tqdm(existing_dct.items(), desc="Processing dataset", unit=" example"):
         doc_id = k
 
         timestamp = v["timestamp"]

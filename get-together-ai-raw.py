@@ -176,8 +176,8 @@ if __name__ == "__main__":
         os.makedirs("together-ai")
     max_workers = 5
     dataset = load_from_disk("snli_with_id")
-    # model = "allenai/OLMo-7B-Instruct"
-    model = "allenai/OLMo-7B"
+    model = "allenai/OLMo-7B-Instruct"
+    # model = "allenai/OLMo-7B"
     # num_instance = 10
     num_instance = None
     tokenizer = None
