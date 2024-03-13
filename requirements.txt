@@ -11,3 +11,4 @@ elasticsearch~=8.12.1
 pymongo~=4.6.2
 # torch~=2.2.1+cu121
 sagemaker~=2.210.0
+ai2-olmo==0.2.5

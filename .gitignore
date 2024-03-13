@@ -6,3 +6,5 @@ venv/
 
 .env
 es_search/es_config.yml
+together-ai/
+inf-gram/

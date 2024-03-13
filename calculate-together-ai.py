@@ -14,6 +14,7 @@ bool_str_mapping = {
     False: "false"
 }
 
+
 def get_together_ai(prompt, model, max_tokens, stop=["</s>"]):
     url = "https://api.together.xyz/v1/completions"
     payload = {
@@ -41,7 +42,6 @@ def get_together_ai(prompt, model, max_tokens, stop=["</s>"]):
         raise Exception(f"Failed to get response from Together AI: HTTP {response.status_code}")
 
 
-
 def main(model, tokenizer):
     pickle_file_path = f"together-ai/snli_{model.replace('/', '-')}-raw.pkl"
     parquet_file_path = f"together-ai/snli_{model.replace('/', '-')}.parquet"
@@ -61,12 +61,12 @@ def main(model, tokenizer):
         max_token_idx = max(dct_idx.values(), key=lambda x: x[1])[1]
         assert max_token_idx == len(res["tokens"]), "Token length mismatch in domain conditional logprob extraction."
 
-        dct_dp_logprob[b_str] = sum(res["token_logprobs"][dct_idx["unconditional_hypothesis"][0]:dct_idx["unconditional_hypothesis"][1]])
+        dct_dp_logprob[b_str] = sum(
+            res["token_logprobs"][dct_idx["unconditional_hypothesis"][0]:dct_idx["unconditional_hypothesis"][1]])
 
     res_dct = {}
     for k, v in tqdm(existing_dct.items(), desc="Processing dataset", unit=" example"):
         doc_id = k
-
         timestamp = v["timestamp"]
         premise = v["premise"]
         hypothesis = v["hypothesis"]
@@ -76,6 +76,7 @@ def main(model, tokenizer):
         predict_bool = v["predict_bool"]
 
         res_dct[doc_id] = {
+            "id": doc_id,
             "timestamp": timestamp,
             "premise": premise,
             "hypothesis": hypothesis,
@@ -126,12 +127,12 @@ def main(model, tokenizer):
         res_dct[doc_id]["sequence_logprob_bool"] = bool_str_mapping[sequence_logprob_bool]
         res_dct[doc_id]["target_bool"] = target_bool
 
-
     df = pd.DataFrame.from_dict(res_dct, orient="index")
     df.to_parquet(parquet_file_path)
 
+
 if __name__ == "__main__":
-    model = "allenai/OLMo-7B"
-    # model = "allenai/OLMo-7B-Instruct"
+    # model = "allenai/OLMo-7B"
+    model = "allenai/OLMo-7B-Instruct"
     tokenizer = AutoTokenizer.from_pretrained(model, trust_remote_code=True)
     main(model, tokenizer)
